@@ -1,0 +1,11 @@
+.u-padding {
+	padding: 23px 32px;
+}
+
+.c-section {
+	margin: 32px 0px;
+}
+
+.c-section:last-child {
+	margin-bottom: 0;
+}

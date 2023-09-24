@@ -4,21 +4,339 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/util.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Home</title>
   </head>
 
-  <body>
-    <header>
-
+  <body class="u-padding">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="Bootstrap" width="40" height="40" class="object-fit-contain">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#albums">Albums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#credits">Credits</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     </header>
-    <main>
+    <main id="home">
+      <section class="container c-section">
+        <h2>Highlights</h2>
+        <hr>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://kurtwenner.com/wp/wp-content/uploads/2017/01/5.-Lost-World-1.jpg" height="720px"
+                class="d-block w-100 object-fit-cover" alt="Wenner highlight">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://uploads-ssl.webflow.com/600db461247f2b3f035619fd/641055bfaaeab1ed73968c46_Imagen%20centrada%203.jpg"
+                height="720px" class="d-block w-100 object-fit-cover" alt="Belin highlight">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://veja.abril.com.br/wp-content/uploads/2016/06/grafite-gemeos-boston-20120808-01-original.jpeg?quality=90&strip=info&w=1040&h=585&crop=1"
+                height="720px" class="d-block w-100 object-fit-cover" alt="Gêmeos highlight">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.dragopublisher.com/wp-content/uploads/2018/07/daim_monolog_2.jpg" height="720px"
+                class="d-block w-100 object-fit-cover" alt="DAIM highlight">
+            </div>
+            <div class="carousel-item">
+              <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Untitled1982Basquiat.jpg"
+                class="d-block w-100 object-fit-cover" height="720px" alt="BASQUIAT highlight">
+            </div>
+            <div class="carousel-item">
+              <img src="https://d2jv9003bew7ag.cloudfront.net/uploads/Edgar-Mueller-Tribute-to-mount-Fuji-2013.jpg"
+                height="720px" class="d-block w-100 object-fit-cover" alt="MÜLLER highlight">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/526197fbe4b0066e9c401d43/6135bedd-c44f-4a66-a512-45d51e89cdb5/pi.jpg?format=2500w"
+                height="720px" class="d-block w-100 object-fit-cover" alt="ARYZ highlight">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.banksy.co.uk/assets/images/rat.gif" height="720px"
+                class="d-block w-100 object-fit-cover" alt="BANKSY highlight">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="container c-section">
+        <h2>Map</h2>
+        <hr>
+        <div class="ratio ratio-16x9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.026733937031!2d-73.98019652342266!3d40.761436734586766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f97bdb102b%3A0xea9f8fc0b3ffff55!2sThe%20Museum%20of%20Modern%20Art!5e0!3m2!1spt-BR!2sbr!4v1695568361017!5m2!1spt-BR!2sbr"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      <section class="container c-section" id="albums">
+        <h2>Albums</h2>
+        <hr>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.banksy.co.uk/assets/images/rat.gif" class="card-img-top object-fit-cover"
+                alt="Bansky highlight" height="200px" />
+              <div class="card-body">
+                <h5 class="card-title">BANKSY</h5>
+                <p class="card-text">
+                  Revered by many, Banksy is an anonymous English artist who composes works full of social and political
+                  criticism. With a
+                  unique aesthetic, Banksy is considered by many to be the most famous graffiti artist in the world. His
+                  works can be
+                  admired in England, the United States, France and other parts of the world and are often the subject
+                  of controversy.
+                </p>
+              </div>
+              <a href="" class="btn btn-outline-primary  m-4">View</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/526197fbe4b0066e9c401d43/6135bedd-c44f-4a66-a512-45d51e89cdb5/pi.jpg?format=2500w"
+                class="card-img-top object-fit-cover" alt="Aryz highlight" height="200px" />
+              <div class="card-body">
+                <h5 class="card-title">ARYZ</h5>
+                <p class="card-text">Aryz is a Spanish artist well known for producing his large-scale art on huge
+                  murals and building facades. Composing
+                  paintings that portray unreal figures, such as aliens, animals and strange people, this graffiti
+                  artist's work is known
+                  around the globe.</p>
+              </div>
+              <a href="" class="btn btn-outline-primary  m-4">View</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://d2jv9003bew7ag.cloudfront.net/uploads/Edgar-Mueller-Tribute-to-mount-Fuji-2013.jpg"
+                class="card-img-top object-fit-cover" alt="Müller highlight" height="200px" />
+              <div class="card-body">
+                <h5 class="card-title">MÜLLER</h5>
+                <p class="card-text">Specialist in street art, Edgar Müller is a famous German graffiti artist who
+                  demonstrated his love for art since he was
+                  a child. With works that draw attention to their beauty, the technique presented by Edgar Müller is
+                  astonishing, as the
+                  artist produces three-dimensional drawings that hypnotize and promote optical illusion effects.</p>
+              </div>
+              <a href="" class="btn btn-outline-primary  m-4">View</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Untitled1982Basquiat.jpg"
+                class="card-img-top object-fit-cover" alt="Basquiat highlight" height="200px" />
+              <div class="card-body">
+                <h5 class="card-title">BASQUIAT</h5>
+                <p class="card-text">
+                  Blunt and critical, Jean-Michel Basquiat was an emblematic American artist who produced works full of
+                  social and
+                  political themes. Exploring both street art and exhibiting in the world's largest museums, Basquiat is
+                  considered a pop
+                  icon.
+                </p>
+              </div>
+              <a href="" class="btn btn-outline-primary  m-4">View</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.dragopublisher.com/wp-content/uploads/2018/07/daim_monolog_2.jpg"
+                class="card-img-top object-fit-cover" alt="Daim highlight" height="200px" />
+              <div class="card-body">
+                <h5 class="card-title">DAIM</h5>
+                <p class="card-text">
+                  Better known as Daim, German Mirko Reisser is one of the most famous graffiti artists in the world.
+                  Composing
+                  pieces falling out
+                  chin, Daim's work presents the illusion of 3D and high technical quality.
+                </p>
+              </div>
+              <a href="" class="btn btn-outline-primary  m-4">View</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://veja.abril.com.br/wp-content/uploads/2016/06/grafite-gemeos-boston-20120808-01-original.jpeg?quality=90&strip=info&w=1040&h=585&crop=1"
+                class="card-img-top object-fit-cover " alt="Gêmeos highlight" height="200px" />
+              <div class="card-body">
+                <h5 class="card-title">GÊMEOS</h5>
+                <p class="card-text">
+                  Considered the most famous graffiti artists in Brazil, Os Gêmeos, Otávio and Gustavo Pandolfo, have
+                  works scattered around
+                  around the world. Working with recyclable materials, these famous graffiti artists address themes
+                  varied in their art,
+                  producing both social content and those related to family themes.
+                </p>
+              </div>
+              <a href="" class="btn btn-outline-primary  m-4">View</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://uploads-ssl.webflow.com/600db461247f2b3f035619fd/641055bfaaeab1ed73968c46_Imagen%20centrada%203.jpg"
+                class="card-img-top object-fit-cover" alt="Belin highlight" height="200px" />
+              <div class="card-body">
+                <h5 class="card-title">BELIN</h5>
+                <p class="card-text">
+                  Presenting an emblematic work, Belin is a famous Spanish graffiti artist who, with genius, draws
+                  attention for his
+                  technical quality by exhibiting, with a great sense of humor, very well-made caricatures that, like a
+                  kind of magic,
+                  seem to enter the borders of the world. surrealism. Considered by many to be one of the greatest
+                  painters of our time,
+                  Kurt Wenner is an American artist who reinvented street art using a unique technique. Through it,
+                  Wenner mixes 3D
+                  dimensions, giving his works a strong realism.
+                </p>
+              </div>
+              <a href="" class="btn btn-outline-primary  m-4">View</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://kurtwenner.com/wp/wp-content/uploads/2017/01/5.-Lost-World-1.jpg"
+                class="card-img-top object-fit-cover" alt="Wenner highlight" height="200px" />
+              <div class="card-body">
+                <h5 class="card-title">WENNER</h5>
+                <p class="card-text">
+                  Considered by many to be one of the greatest painters of our time, Kurt Wenner is an American artist
+                  who reinvented
+                  street art using a unique technique. Through it, Wenner mixes 3D dimensions, giving his works a strong
+                  realism.
+                </p>
+              </div>
+              <a href="" class="btn btn-outline-primary  m-4">View</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container c-section" id="credits">
+        <h2>Credits</h2>
+        <hr>
+        <footer>
+          <div class="row justify-content-between g-4 mb-3">
+            <div class="col-md-6 col-md-2">
+              <p>Website created for the disciplinary work of the DIW discipline - Web Interface Development. All images
+                are the
+                exclusive rights of their respective authors. The content of the website was partially taken from:</p>
+              <p>
+                <a href="https://laart.art.br/blog/grafiteiros-famosos/" rel="noreferrer noopener"
+                  target="_blank">Famous graffiti artists</a>
+                <br>
+                <a href="https://www.flaticon.com/free-icons/splash" rel="noreferrer noopener" target="_blank"
+                  title="Splash icons">Splash
+                  icons created by
+                  Andrejs
+                  Kirma -
+                  Flaticon</a>
+              </p>
+            </div>
+            <div class="col-md-6 col-md-2">
+              <div class="card h-100">
+                <div class="row ">
+                  <div class="col-4">
+                    <img src="./img/avatar.png" class="card-img object-fit-contain" width="160px" height="160px"
+                      alt="...">
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Gustavo Costa</h5>
+                      <p class="card-text">
+                        Software Engineering undergraduate student.
+                      </p>
+                      <p>
+                        <!-- Facebook -->
+                        <i class="fab fa-facebook-f"></i>
 
+                        <!-- Twitter -->
+                        <i class="fab fa-twitter"></i>
+
+                        <!-- Google -->
+                        <i class="fab fa-google"></i>
+
+                        <!-- Instagram -->
+                        <i class="fab fa-instagram"></i>
+
+                        <!-- Linkedin -->
+                        <i class="fab fa-linkedin-in"></i>
+
+                        <!-- Pinterest -->
+                        <i class="fab fa-pinterest"></i>
+
+                        <!-- Vkontakte -->
+                        <i class="fab fa-vk"></i>
+
+                        <!-- Stack overflow -->
+                        <i class="fab fa-stack-overflow"></i>
+
+                        <!-- Youtube -->
+                        <i class="fab fa-youtube"></i>
+
+                        <!-- Slack -->
+                        <i class="fab fa-slack-hash"></i>
+
+                        <!-- Github -->
+                        <i class="fab fa-github"></i>
+
+                        <!-- Dribbble -->
+                        <i class="fab fa-dribbble"></i>
+
+                        <!-- Reddit -->
+                        <i class="fab fa-reddit-alien"></i>
+
+                        <!-- Whatsapp -->
+                        <i class="bi bi-whatsapp"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 border-top">
+            <p>&copy; 2023 Costa, Gustavo. All rights reserved.</p>
+          </div>
+        </footer>
+      </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+      </script>
   </body>
 
 </html>
