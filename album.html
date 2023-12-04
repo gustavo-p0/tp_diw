@@ -4,10 +4,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/util.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="/script/album/album.js" type="module" defer></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer>
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      defer></script>
+
+    <style>
+      .c-highlighted {}
+    </style>
     <title>Album</title>
   </head>
 
@@ -39,57 +49,31 @@
     </header>
     <main id="album">
       <section class="container c-section">
-        <a href="./album.html">Go Back</a>
-        <h2 class="display-1">Album</h2>
+        <a href="./index.html">Go Back</a>
+        <h2 class="display-1">Album </h2>
+        <button id="highlight-button" class="btn btn-primary">Destacar ★</button>
         <hr>
         <div class="card mb-3">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <img src="./img/works/wenner/profile.webp" class="card-img object-fit-cover p-4" height="360"
-                alt="Kurt Wenner">
+              <img src="" class="card-img object-fit-cover p-4" height="360" alt="Album image" id="album-image">
             </div>
             <div class="col-md-8">
               <div class="card-body container">
-                <h3 class="card-title">Kurt Wenner</h5>
-                  <div class="row mb-4">
-                    <p class="card-text">Kurt Wenner is one of the world’s leading artists, most famous for inventing
-                      interactive 3D art
-                      illusions. His work has
-                      appeared in more than 30 countries, and in 1991 he received the Kennedy Center Medallion for his
-                      outstanding
-                      contribution to art education.</p>
-                    <p class="card-text">
-                      In the 1980s, he left his job at NASA and moved to Europe to study the great works of art. By
-                      unlocking
-                      long lost
-                      secrets of geometry and proportion, he conceived the idea for his 3D images. He went on to pioneer
-                      bringing art outdoors
-                      to the public, as well as making it interactive.
-                    </p>
-                    <p class="card-text">Wenner’s body of work also includes large-scale oil paintings, ceramic murals,
-                      sculptures, illusion
-                      rooms, and
-                      architectural design. Most of this work is found in private estates of some of the world’s most
-                      wealthy
-                      and famous
-                      personalities.</p>
-                    <p class="card-text">His expertise, innovation, and artistry across so many mediums makes Wenner’s
-                      work
-                      unrivaled.</p>
-                    <p class="card-text"><small class="text-muted">Kurt Wenner - <a
-                          href="https://kurtwenner.com/biography" target="_blank"
-                          rel="noreferrer noopener">Biography</a></small></p>
+                <h3 class="card-title" id="album-title"></h3>
+                <div class="row mb-4">
+                  <p class="card-text" id="album-description"></p>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <h4>Coordinates:</h4>
+                    <p id="album-coordinates"></p>
                   </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <h4>Location:</h4>
-                      <p>Ann Arbor, Michigan, EUA.</p>
-                    </div>
-                    <div class="col-6">
-                      <h4>Birth:</h4>
-                      <p>April 17th, 1958</p>
-                    </div>
+                  <div class="col-6">
+                    <h4>Register:</h4>
+                    <p id="album-register"></p>
                   </div>
+                </div>
               </div>
             </div>
           </div>
@@ -97,214 +81,12 @@
       </section>
       <section class="container c-section" id="works">
         <h2>Works</h2>
+        <p class="alert alert-light" role="alert">Click on the item image to see in more detail.</p>
         <hr>
-        <div class="row" data-masonry='{"percentPosition": true }'>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/1.jpeg" alt="Work image" width="100%" height="200"
-                  class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Paradise Lost</h5>
-                <p class="card-text">Part of Painting, Sculpture & Design works.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card p-3">
-              <figure class="p-3 mb-0">
-                <blockquote class="blockquote">
-                  <p>Kurt Wenner is one of the world’s leading artists, most famous for inventing interactive 3D art
-                    illusions. His work has
-                    appeared in more than 30 countries, and in 1991 he received the Kennedy Center Medallion for his
-                    outstanding
-                    contribution to art education.</p>
-                </blockquote>
-                <figcaption class="blockquote-footer mb-0 text-muted">
-                  <a href="https://kurtwenner.com/biography" target="_blank"
-                    rel="noreferrer noopener">Biography</a></cite>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/2.jpg" alt="Work image" width="100%" height="400" class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Fall of Icarus</h5>
-                <p class="card-text">Part of Painting, Sculpture & Design works.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card bg-primary text-white  p-3">
-              <figure class="mb-0">
-                <blockquote class="blockquote">
-                  <p>His expertise, innovation, and artistry across so many mediums makes Wenner’s work unrivaled.</p>
-                </blockquote>
-              </figure>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/3.jpg" alt="Work image" width="100%" height="500" class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Wenheng Guan Yuwenner</h5>
-                <p class="card-text">Part of 3D
-                  Street
-                  Art works.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/5.jpg" alt="Work image" width="100%" height="400" class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Kwan Yin Email Pastel Fine</h5>
-                <p class="card-text">Part of Drawing & Pastel works.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/4.jpg" alt="Work image" width="100%" height="300" class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">The Fortune Teller</h5>
-                <p class="card-text">Part of Drawing & Pastel works.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/6.jpg" alt="Work image" width="100%" height="360" class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">St Michael Altar</h5>
-                <p class="card-text">Part of sacred
-                  Art works.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/7.webp" alt="Work image" width="100%" height="420"
-                  class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Archangel Gabriel</h5>
-                <p class="card-text">Part of Drawing & Pastel works.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card p-3 text-end">
-              <figure class="mb-0">
-                <blockquote class="blockquote">
-                  <p>Artistic geometry and Renaissance classicism are my two passions. My interest in them grew out of
-                    learning how to draw
-                    as artists did five-hundred years ago. I’m especially fascinated with how ideas and concepts are
-                    transformed through the
-                    centuries, flourishing one moment then ignored and lost in others. My artistic motivation is to show
-                    how classicism,
-                    which is a skill set based on the workings of nature, is vital to our world today. Western
-                    Civilization has left a rich
-                    heritage that we’ve overlooked for centuries. It’s a cultural tragedy when knowledge is lost, and
-                    through my art and
-                    teaching, I work to bring it back to life.
-                  </p>
-                </blockquote>
-                <figcaption class="blockquote-footer mb-0 text-muted">
-                  Kurt Wenner
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/8.jpg" alt="Work image" width="100%" height="240" class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Villa Te Main House</h5>
-                <p class="card-text">Part of Architectural Design works.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/9.jpg" alt="Work image" width="100%" height="360" class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Villa Te Main House East Elevation</h5>
-                <p class="card-text">Part of Architectural Design works.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/10.jpg" alt="Work image" width="100%" height="500"
-                  class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Spider-Man</h5>
-                <p class="card-text">Part of 3D
-                  Street
-                  Art works.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/11.jpg" alt="Work image" width="100%" height="400"
-                  class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Garden Of The Gods</h5>
-                <p class="card-text">Part of 3D
-                  Street
-                  Art works.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-              <a href="./item.html">
-                <img src="./img/works/wenner/12.jpg" alt="Work image" width="100%" height==600"
-                  class="object-fit-cover">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">The Finish Line</h5>
-                <p class="card-text">Part of 3D
-                  Street
-                  Art works.</p>
-              </div>
-            </div>
-          </div>
+        <div class="row" data-masonry='{"percentPosition": true }' id="photos-container">
         </div>
       </section>
     </main>
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-      </script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-      async></script>
-
   </body>
 
 </html>
